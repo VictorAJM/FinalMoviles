@@ -4,7 +4,7 @@
 
 ### **1. Configuración Inicial** (1-2 días)
 
-- [ ] **Configurar el entorno:**
+- [X] **Configurar el entorno:**
   - Instalar Node.js, Expo CLI, y configurar un proyecto de React Native.
   - Crear un proyecto en Firebase y configurar Firestore como base de datos.
   - Configurar Firebase en el proyecto React Native.
