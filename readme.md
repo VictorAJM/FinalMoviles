@@ -3,6 +3,7 @@
 ## Milestones Detallados
 
 ### **1. Configuración Inicial** (1-2 días)
+
 - [ ] **Configurar el entorno:**
   - Instalar Node.js, Expo CLI, y configurar un proyecto de React Native.
   - Crear un proyecto en Firebase y configurar Firestore como base de datos.
@@ -21,6 +22,7 @@
 ---
 
 ### **2. Desarrollo de Pantalla Principal** (3-4 días)
+
 - [ ] **Diseño del UI:**
   - Crear la pantalla inicial para mostrar categorías como cuadros o tarjetas.
   - Añadir un campo de entrada y un botón para agregar nuevas categorías.
@@ -35,6 +37,7 @@
 ---
 
 ### **3. Desarrollo de la Pantalla de Productos** (4-5 días)
+
 - [ ] **Diseño del UI:**
   - Crear una lista estilizada para mostrar productos de la categoría seleccionada.
   - Añadir un campo de entrada y un botón para agregar nuevos productos.
@@ -56,6 +59,7 @@
 ---
 
 ### **4. Mejora de la Presentación** (2-3 días)
+
 - [ ] **Optimización de la Interfaz:**
   - Ajustar el diseño para dispositivos móviles.
   - Implementar un tema de colores y estilos consistentes.
@@ -65,6 +69,7 @@
 ---
 
 ### **5. Pruebas y Documentación** (2-3 días)
+
 - [ ] **Pruebas Completas:**
   - Revisar todas las funciones principales:
     - Agregar categorías/productos.
@@ -77,6 +82,7 @@
 ---
 
 ### **6. Preparación para la Presentación** (1-2 días)
+
 - [ ] **División de Roles:**
   - Asignar secciones del proyecto para que cada integrante pueda explicarlas.
 - [ ] **Simulación de Preguntas:**
@@ -87,12 +93,15 @@
 ---
 
 ## Productos Incluidos
+
 Cada producto debe incluir:
+
 - **Nombre:** Título claro del producto.
 - **Descripción:** Breve detalle del producto.
 - **Imagen:** Subida a Firebase Storage.
 
 **Ejemplo visual:**
+
 - **Categoría:** Tecnología
   - **Producto:** Laptop X
     - **Descripción:** Procesador Intel i7, 16GB RAM.
@@ -101,6 +110,7 @@ Cada producto debe incluir:
 ---
 
 ## Rúbrica de Evaluación
+
 - **Uso de una fuente de datos como Firebase Firestore o una REST API:** 60%
 - **Funcionamiento completo de la aplicación con React Native:** 30%
 - **Buena presentación de la aplicación (estilo, diseño, etc.):** 10%
