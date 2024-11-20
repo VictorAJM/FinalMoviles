@@ -6,18 +6,16 @@
 
 - [X] **Configurar el entorno:**
   - Instalar Node.js, Expo CLI, y configurar un proyecto de React Native.
-  - Crear un proyecto en Firebase y configurar Firestore como base de datos.
-  - Configurar Firebase en el proyecto React Native.
   - Instalar dependencias principales:
-    - `firebase`
     - `react-navigation`
     - Librerías de diseño (`react-native-paper`, `styled-components`, etc.).
+    - `expo-sqlite` o `react-native-sqlite-storage` para manejar SQLite.
 - [ ] **Definir la estructura del proyecto:**
   - Crear carpetas base:
     - `screens`, `components`, `services`, y `assets`.
-  - Crear colecciones iniciales en Firebase:
-    - **categorías**
-    - **productos**
+  - Configurar la base de datos SQLite:
+    - **Tabla Categorías**
+    - **Tabla Productos**
 
 ---
 
@@ -27,7 +25,7 @@
   - Crear la pantalla inicial para mostrar categorías como cuadros o tarjetas.
   - Añadir un campo de entrada y un botón para agregar nuevas categorías.
 - [ ] **Funcionalidad:**
-  - Conectar la pantalla inicial a Firebase Firestore:
+  - Conectar la pantalla inicial a SQLite:
     - Consultar y mostrar las categorías disponibles.
     - Permitir agregar nuevas categorías (validar entradas para evitar duplicados).
   - Implementar navegación a la pantalla de productos al seleccionar una categoría.
@@ -42,12 +40,12 @@
   - Crear una lista estilizada para mostrar productos de la categoría seleccionada.
   - Añadir un campo de entrada y un botón para agregar nuevos productos.
 - [ ] **Funcionalidad:**
-  - Consultar productos relacionados a la categoría seleccionada desde Firebase.
+  - Consultar productos relacionados a la categoría seleccionada desde SQLite.
   - Permitir agregar nuevos productos con:
     - Nombre
     - Descripción
-    - Imagen (subida a Firebase Storage).
-  - Guardar la URL de la imagen en Firestore.
+    - Imagen (almacenada como BLOB en SQLite).
+  - Asociar productos a categorías mediante claves foráneas.
 - [ ] **Estilización:**
   - Diseñar la lista de productos mostrando:
     - Nombre
@@ -88,7 +86,7 @@
 - [ ] **Simulación de Preguntas:**
   - Preparar preguntas comunes sobre:
     - Lógica del código.
-    - Integración con Firebase.
+    - Uso de SQLite.
 
 ---
 
@@ -98,19 +96,19 @@ Cada producto debe incluir:
 
 - **Nombre:** Título claro del producto.
 - **Descripción:** Breve detalle del producto.
-- **Imagen:** Subida a Firebase Storage.
+- **Imagen:** Almacenada como BLOB en SQLite.
 
 **Ejemplo visual:**
 
 - **Categoría:** Tecnología
   - **Producto:** Laptop X
     - **Descripción:** Procesador Intel i7, 16GB RAM.
-    - **Imagen:** Mostrada desde Firebase.
+    - **Imagen:** Mostrada desde los datos almacenados en SQLite.
 
 ---
 
 ## Rúbrica de Evaluación
 
-- **Uso de una fuente de datos como Firebase Firestore o una REST API:** 60%
+- **Uso de una fuente de datos como SQLite:** 60%
 - **Funcionamiento completo de la aplicación con React Native:** 30%
 - **Buena presentación de la aplicación (estilo, diseño, etc.):** 10%
